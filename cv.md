@@ -35,7 +35,7 @@ return newArr.join('');
 ```
 
 ## Work experience
-* working on this cv
+* Working on this CV
 
 ## Education
 Kaliningrad State Immanuel Kant BFU Applied Mathematics and Computer Science
