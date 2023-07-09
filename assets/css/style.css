@@ -1,0 +1,402 @@
+@import "normalize.css";
+/*Large Devices, Wide Screens - 1200px*/
+/*Medium Devices, Desktops - 992 px*/
+/* Small Device, Tablets */
+/*Extra Small Devices, Phones*/
+/* Custom, iPhone Retina */
+body {
+  background: #1F1E1B;
+  font-family: "Inconsolata", monospace;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #FF8303;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav .logo-svg {
+  padding: 10px;
+}
+.nav .main-menu {
+  width: 530px;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+.nav .main-menu .nav-item {
+  font-weight: 700;
+  font-size: 20px;
+  color: #F0E3CA;
+  opacity: 0.5;
+  transition: 0.3s;
+  padding: 15px;
+  text-decoration: none;
+}
+.nav .main-menu .nav-item:hover {
+  opacity: 1;
+}
+.nav .main-menu .active {
+  color: #FF8303;
+  opacity: 1;
+}
+
+.promo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0px 10px;
+}
+@media (max-width: 768px) {
+  .promo-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.promo-wrapper .promo-my-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 30px;
+  max-width: 450px;
+}
+.promo-wrapper .promo-my-name h1 {
+  font-weight: 900;
+  font-size: 48px;
+  color: #FF8303;
+}
+.promo-wrapper .promo-my-name h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: start;
+  color: #fff;
+}
+.promo-wrapper .promo-my-name h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+  color: #F0E3CA;
+}
+.promo-wrapper .promo-my-name p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #F0E3CA;
+}
+.promo-wrapper .promo-photo-back {
+  position: relative;
+  width: 600px;
+}
+@media (max-width: 480px) {
+  .promo-wrapper .promo-photo-back {
+    width: 330px;
+    height: 330px;
+    padding-bottom: 80px;
+  }
+}
+.promo-wrapper .promo-photo-back pre {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: start;
+  color: rgba(163, 87, 9, 0.5);
+}
+@media (max-width: 480px) {
+  .promo-wrapper .promo-photo-back pre {
+    font-family: Inconsolata;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.promo-wrapper .promo-photo-back pre:after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+.promo-wrapper .promo-photo-back img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 480px) {
+  .promo-wrapper .promo-photo-back img {
+    width: 250px;
+  }
+}
+
+.about-me-wrapper {
+  padding: 0px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+.about-me-wrapper p {
+  width: 600px;
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #F0E3CA;
+}
+
+.skills .skills-inner {
+  padding: 20px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+}
+.skills .skills-inner .box-wrapper {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 32px;
+}
+.skills .skills-inner .box-wrapper .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  background-color: #2D322A;
+  width: 100px;
+  height: 150px;
+}
+@media (max-width: 480px) {
+  .skills .skills-inner .box-wrapper .box svg {
+    width: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .skills .skills-inner .box-wrapper .box {
+    padding: 5px;
+    width: 280px;
+    height: 60px;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+  }
+}
+.skills .skills-inner .box-wrapper .box h3 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 37px;
+  color: #fff;
+}
+@media (max-width: 480px) {
+  .skills .skills-inner .box-wrapper .box h3 {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+.skills .skills-inner .box-wrapper .box path {
+  fill: #F0E3CA;
+  transition: 0.3s;
+}
+.skills .skills-inner .box-wrapper .box:hover:nth-child(1) path {
+  fill: #FC490B;
+}
+.skills .skills-inner .box-wrapper .box:hover:nth-child(2) path {
+  fill: #2196F4;
+}
+.skills .skills-inner .box-wrapper .box:hover:nth-child(3) path {
+  fill: #FFDF00;
+}
+.skills .skills-inner .box-wrapper .box:hover:nth-child(4) path {
+  fill: #CA669B;
+}
+.skills .skills-inner .box-wrapper .box:hover:nth-child(5) path {
+  fill: #F25234;
+}
+
+.my-works {
+  padding: 50px 0;
+}
+.my-works .box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .my-works .box-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.my-works .box-wrapper .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  max-width: 320px;
+  max-width: 320px;
+}
+.my-works .box-wrapper .box h4 {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: #F0E3CA;
+  border-bottom: 1px solid #FF8303;
+  padding-bottom: 5px;
+}
+.my-works .box-wrapper .box p {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #F0E3CA;
+}
+.my-works .box-wrapper .box a span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  color: #F0E3CA;
+  border-radius: 4px;
+  background: #32312E;
+}
+
+.footer .footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
+  padding: 50px 0;
+}
+.footer .footer-wrapper .footer-inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .footer .footer-wrapper .footer-inner {
+    align-items: center;
+  }
+}
+.footer .footer-wrapper .footer-inner img {
+  display: inline-block;
+}
+.footer .footer-wrapper .footer-inner p {
+  max-width: 300px;
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #F0E3CA;
+}
+@media (max-width: 768px) {
+  .footer .footer-wrapper .footer-inner p {
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+  }
+}
+.footer .footer-wrapper .footer-inner h2 {
+  line-height: 0;
+}
+.footer .footer-wrapper .footer-inner .contacts {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+.footer .footer-wrapper .footer-inner .contacts .contacts-inner {
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+}
+@media (max-width: 480px) {
+  .footer .footer-wrapper .footer-inner .contacts .contacts-inner {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.footer .footer-wrapper .footer-inner .contacts .contacts-inner a {
+  gap: 5px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FF8303;
+}
+
+/*# sourceMappingURL=style.css.map */
