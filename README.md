@@ -1,1 +1,1 @@
-https://sinsqlamy.github.io/rsschool-cv/index
+https://sinsqlamy.github.io/rsschool-cv/index.html
