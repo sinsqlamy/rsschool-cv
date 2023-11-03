@@ -13,8 +13,8 @@ My goal is to learn everything new and exciting. I love programming and drinking
 * Git/github
 * HTML/BOOTSTRAP
 * CSS/SASS
-* JavaScript and C++ Basics
-* VS Code, IntelliJ IDEA, CLion
+* JavaScript Basics
+* VS Code
 * Figma
 
 ## Code example

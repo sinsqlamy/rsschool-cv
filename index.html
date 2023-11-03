@@ -8,27 +8,31 @@
     <title>Semenov Denis</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap" />
+    <link rel="icon" type="image/png" href="assets/images/me.png">
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <ul class="main-menu">
+        <div class="container header__container">
+            <nav class="header__nav">
+                <ul class="header__main-menu">
                     <li>
-                        <a href="#about-me" class="nav-item active">About Me</a>
+                        <a href="#about-me" class="header__nav-item header__nav-item--active">About Me</a>
                     </li>
+
                     <li>
-                        <a href="#skills" class="nav-item">Skills</a>
+                        <a href="#skills" class="header__nav-item">Skills</a>
                     </li>
+
                     <li>
-                        <a href="#pet-projects" class="nav-item">Pet-Projects</a>
+                        <a href="#pet-projects" class="header__nav-item">Pet-Projects</a>
                     </li>
+
                     <li>
-                        <a href="#contacts" class="nav-item">Contacts</a>
+                        <a href="#contacts" class="header__nav-item">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -39,18 +43,18 @@
     <main class="main">
         <!-- promo -->
         <section class="promo">
-            <div class="container">
-                <div class="promo-wrapper">
-                    <div class="promo-my-name promo-inner">
-                        <h1>Semenov Denis</h1>
-                        <h2>Frontend Developer</h2>
-                        <p>
-                            Frontend developer looking for ideas and projects for himself and
-                            others
-                        </p>
-                    </div>
-                    <div class="promo-photo-back promo-inner">
-                        <pre id="typewriter">
+            <div class="container promo__container">
+                <div class="promo__inner">
+                    <h1 class="promo__title">Semenov Denis</h1>
+                    <h2 class="promo__subtitle">Frontend Developer</h2>
+                    <p class="promo__description">
+                        Frontend developer looking for ideas
+                        and projects for himself and others
+                    </p>
+                </div>
+
+                <div class="promo__inner promo__animation">
+                    <pre id="typewriter" class="promo__code">
   let button_menu = document.querySelector(".header_button");
   let float_menu  = document.querySelector(".header_menu--float");
 
@@ -82,10 +86,14 @@
     }
     writeSymbols();
   }
-            </pre>
-                        <img src="assets/images/Rectangle-white.svg" alt="" class="white-rectangle" />
-                        <img src="assets/images/Rectangle-orange.svg" alt="" class="orange-rectangle" />
-                        <img src="assets/images/me.png" style="width: 80px; border-radius: 50px;" alt="">
+                        </pre>
+
+                    <div class="promo__images">
+                        <img src="assets/images/Rectangle-white.svg" alt="" class="promo__image promo__image--white" />
+
+                        <img src="assets/images/Rectangle-orange.svg" alt="" class="promo__image promo__image--orange" />
+
+                        <img src="assets/images/me.png" alt="My logo" class="promo__image promo__image--logo" />
                     </div>
                 </div>
             </div>
@@ -195,24 +203,48 @@
             <div class="footer-wrapper">
                 <div class="footer-inner">
                     <p>
-                        If you liked my work and you need me, I'm ready to talk to you.
+                        If you liked my work and you need me,
+                        I'm ready to talk to you.
                     </p>
-                    <a href="https://github.com/rolling-scopes-school/tasks/blob/master/roadmap.md"><img
-                            src="assets/images/rs_school_js.svg" style="width: 300px;" alt="rs-school-ico"></a>
+
+                    <a href="">
+                        <img src="assets/images/rs_school_js.svg" alt="rs-school-ico">
+                    </a>
                 </div>
+
                 <div class="footer-inner">
                     <h2>Сontacts</h2>
+
                     <div class="contacts">
                         <ul class="contacts-inner">
-                            <li><a href=""><img src="./assets/images/mail.svg" alt="" />ds19092004@gmail.com</a></li>
-                            <li><a href=""><img src="./assets/images/vk.svg" alt="" />@semenov_engineer</a></li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/mail.svg" alt="" />ds19092004@gmail.com
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/vk.svg" alt="" />@semenov_engineer
+                                </a>
+                            </li>
                         </ul>
+
                         <ul class="contacts-inner">
-                            <li><a href="https://github.com/sinsqlamy/"><img src="./assets/images/github.svg"
-                                        alt="" />sinsqlamy</a></li>
-                            <li><a href=""><img src="./assets/images/figma.svg" alt="" />sqlamy</a></li>
+                            <li>
+                                <a href="https://github.com/sinsqlamy/">
+                                    <img src="./assets/images/github.svg" alt="" />sinsqlamy
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <img src="./assets/images/figma.svg" alt="" />sqlamy
+                                </a>
+                            </li>
                         </ul>
                     </div>
+
                     <p>© 2023 sqlamy.</p>
                 </div>
             </div>
