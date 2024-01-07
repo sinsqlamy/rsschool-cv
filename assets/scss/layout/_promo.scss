@@ -1,0 +1,75 @@
+/* PROMO */
+.promo__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.promo__container .promo__inner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.promo__container .promo__title {
+    font-weight: 900;
+    font-size: 48px;
+    color: #FF8303;
+}
+
+.promo__container .promo__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: start;
+    color: #fff;
+}
+
+.promo__container .promo__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F0E3CA;
+}
+
+.promo__container .promo__animation {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.promo__container .promo__animation pre {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: start;
+    color: rgba(163, 87, 9, 0.5);
+}
+
+.promo__container .promo__animation pre:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
+
+.promo__container .promo__animation .promo__images {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 480px) {
+    .promo__container .promo__photo_bg img {
+        width: 250px;
+    }
+}
+
+/* /PROMO */
