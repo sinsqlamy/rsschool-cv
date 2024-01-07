@@ -1,0 +1,40 @@
+/* HEADER */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-svg {
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    max-width: 53rem;
+    flex-flow: row wrap;
+    padding: 2rem 0.5rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.menu__item {
+    font-weight: 700;
+    font-size: 20px;
+    color: #F0E3CA;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: 0.3s;
+    padding: 2rem;
+}
+
+.menu__item:hover {
+    opacity: 1;
+}
+
+.menu__item_active {
+    color: #FF8303;
+    opacity: 1;
+}
+
+/* /HEADER */

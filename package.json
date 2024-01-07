@@ -1,0 +1,20 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "https://sinsqlamy.github.io/rsschool-cv/index.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch assets/scss/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinsqlamy/rsschool-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinsqlamy/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/sinsqlamy/rsschool-cv#readme"
+}
