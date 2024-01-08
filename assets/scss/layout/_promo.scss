@@ -1,0 +1,58 @@
+/* PROMO */
+.promo__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.promo__container .promo__inner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.promo__container .promo__animation {
+    position: relative;
+    width: 60rem;
+    height: 60rem;
+    padding: 3rem;
+}
+
+// code animation
+.promo__container .promo__animation pre {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: start;
+    color: rgba(163, 87, 9, 0.5);
+}
+
+.promo__container .promo__animation pre:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
+// /code animation
+
+.promo__image_light {
+    width: 30rem;
+    position: absolute;
+    left: 10rem;
+    top: 10rem;
+}
+
+.promo__image_brown {
+    width: 30rem;
+    position: absolute;
+    left: 12rem;
+    top: 15rem;
+}
+
+/* /PROMO */

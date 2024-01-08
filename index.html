@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semenov Denis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap" />
+    <link rel="icon" type="image/png" href="assets/images/me.png">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="container header__container">
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li>
+                            <a href="#about-me" class="menu__item menu__item_active">About Me</a>
+                        </li>
+
+                        <li>
+                            <a href="#skills" class="menu__item">Skills</a>
+                        </li>
+
+                        <li>
+                            <a href="#pet-projects" class="menu__item">Pet-Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="#contacts" class="menu__item">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- main -->
+        <main class="main">
+            <!-- promo -->
+            <section class="promo">
+                <div class="container promo__container">
+                    <div class="promo__inner">
+                        <h1 class="promo__title">Semenov Denis</h1>
+
+                        <h2 class="promo__subtitle">Frontend Developer</h2>
+
+                        <p class="promo__description">
+                            Frontend developer looking for ideas
+                            and projects for himself and others
+                        </p>
+                    </div>
+
+                    <div class="promo__inner promo__animation">
+                        <pre id="typewriter" class="promo__code">
+  let button_menu = document.querySelector(".header_button");
+  let float_menu  = document.querySelector(".header_menu--float");
+
+  let line_top   = document.querySelector(".header_button_line--top");
+  let line_under = document.querySelector(".header_button_line--bottom");
+
+  button_menu.isSelected = false;
+
+  function addEffectWriting(element, time) {
+    let element_array = element.innerText.split("");
+  
+    element.count     = 0;
+    element.innerText = "";
+  
+    function writeSymbols() {
+      element.innerText += element_array[element.count];
+      element.count++;
+  
+      if (element.count &lt;= element_array.length) {
+        setTimeout(() => {
+          writeSymbols();
+        }, time);
+      } else if (element.count >= element_array.length) {
+        element.count     = 0;
+        element.innerText = "";
+      
+        writeSymbols();
+      }
+    }
+    writeSymbols();
+  }
+                        </pre>
+
+                        <div class="promo__images">
+                            <img src="assets/images/Rectangle-white.svg" alt=""
+                                class="promo__image promo__image_light" />
+
+                            <img src="assets/images/Rectangle-orange.svg" alt=""
+                                class="promo__image promo__image_brown" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /promo -->
+            <!-- about-me -->
+            <section class="about-me" id="about-me">
+                <div class="container">
+                    <div class="about-me-wrapper">
+                        <h2>About me</h2>
+
+                        <img src="assets/images/Logo.svg" alt="" />
+
+                        <p>
+                            A few years ago, I became interested in developing websites and
+                            interfaces.
+                            Since then, I have been steadily improving my skills.
+                            Now I am developing websites and web applications to order or for
+                            myself.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- /about-me -->
+            <!-- education -->
+            <section class="education">
+                <div class="container">
+                    <h2>Education</h2>
+                    <p>Kaliningrad State Immanuel Kant BFU Applied Mathematics and Computer Science</p>
+                </div>
+            </section>
+            <!-- /education -->
+            <section class="languages">
+                <div class="container">
+                    <h2>Languages</h2>
+                    <p>English - Pre-Intermediate (A2)</p>
+                    <p>Russian - Native</p>
+                </div>
+            </section>
+            <!-- skills -->
+            <!-- \TODO SVG COLOR ANIMATION AND INCLUDES -->
+            <section class="skills" id="skills">
+                <div class="container">
+                    <div class="skills-inner">
+                        <h2>My Skills</h2>
+
+                        <ul class="box-wrapper">
+                            <li class="box">
+                                <h3>HTML5</h3>
+                            </li>
+
+                            <li class="box">
+                                <h3>CSS3</h3>
+                            </li>
+
+                            <li class="box">
+                                <h3>JavaScript</h3>
+                            </li>
+
+                            <li class="box">
+                                <h3>SCSS</h3>
+                            </li>
+
+                            <li class="box">
+                                <h3>Git</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- /skills -->
+            <!-- my-works -->
+            <section class="my-works" id="pet-projects">
+                <div class="container">
+                    <h2>My Works</h2>
+                    <p>Working on this CV</p>
+                </div>
+            </section>
+            <!-- /my-works -->
+        </main>
+        <!-- /main -->
+        <!-- footer -->
+        <footer class="footer" id="contacts">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-inner">
+                        <p>
+                            If you liked my work and you need me,
+                            I'm ready to talk to you.
+                        </p>
+
+                        <a href="">
+                            <img src="assets/images/rs_school_js.svg" alt="rs-school-ico">
+                        </a>
+                    </div>
+
+                    <div class="footer-inner">
+                        <h2>Сontacts</h2>
+
+                        <div class="contacts">
+                            <ul class="contacts-inner">
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/mail.svg" alt="" />ds19092004@gmail.com
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/vk.svg" alt="" />@semenov_engineer
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="contacts-inner">
+                                <li>
+                                    <a href="https://github.com/sinsqlamy/">
+                                        <img src="./assets/images/github.svg" alt="" />sinsqlamy
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/figma.svg" alt="" />sqlamy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p>© 2023 sqlamy.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!-- <script src="assets/js/main.js"></script> -->
+</body>
+
+</html>
