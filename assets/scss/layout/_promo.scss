@@ -4,43 +4,24 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 5rem;
 }
 
 .promo__container .promo__inner {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    gap: 15px;
-}
-
-.promo__container .promo__title {
-    font-weight: 900;
-    font-size: 48px;
-    color: #FF8303;
-}
-
-.promo__container .promo__subtitle {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 34px;
-    text-align: start;
-    color: #fff;
-}
-
-.promo__container .promo__description {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #F0E3CA;
+    gap: 0.7rem;
 }
 
 .promo__container .promo__animation {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 60rem;
+    height: 60rem;
+    padding: 3rem;
 }
 
+// code animation
 .promo__container .promo__animation pre {
     display: inline-block;
     width: 100%;
@@ -58,18 +39,20 @@
     content: "|";
     animation: blink 500ms linear infinite alternate;
 }
+// /code animation
 
-.promo__container .promo__animation .promo__images {
+.promo__image_light {
+    width: 30rem;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 10rem;
+    top: 10rem;
 }
 
-@media (max-width: 480px) {
-    .promo__container .promo__photo_bg img {
-        width: 250px;
-    }
+.promo__image_brown {
+    width: 30rem;
+    position: absolute;
+    left: 12rem;
+    top: 15rem;
 }
 
 /* /PROMO */
